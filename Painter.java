@@ -10,6 +10,9 @@ public class Painter{
         for(Drawable D:toDraw)
             D.draw(G);
     }
+    public void add(Drawable D){
+        toDraw.add(D);
+    }
 }
 
 // animals, currently implemented as a circle
@@ -21,7 +24,7 @@ class Animal implements Drawable{
 
     // helper to return euclidan distance
     private static double dist(double x, double y){
-        return Math.sqrt(x*x,y*y);
+        return Math.sqrt(x*x+y*y);
     }
 
     // constructor
