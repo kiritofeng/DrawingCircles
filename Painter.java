@@ -4,7 +4,8 @@ import java.util.ArrayList;
 // helper to draw everything
 public class Painter{
     ArrayList<Drawable>toDraw;
-    private Painter(){
+    public Painter(){
+        toDraw=new ArrayList<>();
     }
     public void drawAll(Graphics G){
         for(Drawable D:toDraw)
